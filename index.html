@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combinators</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+       <!--Q-1=Write a CSS rule to select only the p elements with the class text that are direct children of the box div. Ensure that the p inside the nested div is excluded-->
+
+     <div class="container">
+        <div class="box">
+          <p class="text">Paragraph 1</p>
+          <p class="text">Paragraph 2</p>
+          <div class="nested">
+            <p class="text">Nested Paragraph</p>
+          </div>
+        </div>
+        <p class="text">Paragraph 3</p>
+      </div>
+    <!--Q-2=Write a CSS rule to select all p elements with the class content that are descendants of the container div.-->
+     <ul class="list">
+        <li class="item">Item 1</li>
+        <li class="item">Item 2</li>
+        <li class="special">Special Item</li>
+        <li class="item">Item 3</li>
+      </ul>
+      <div class="container">
+        <div class="box">
+          <p class="content">Content 1</p>
+          <p class="highlight">Content 2</p>
+        </div>
+      </div>
+    <!--Q-3=Style all div elements with the class sibling that follow a child inside the parent.-->
+    <div class="parent">
+        <div class="child">Child 1</div>
+        <div class="child">Child 2</div>
+        <div class="sibling">Sibling</div>
+      </div>
+      <p class="child">Outside Child</p>
+    <!--Q-4=Style the first div with the class box that is directly followed by another div.-->
+    <div class="container">
+        <div class="box">Box 1</div>
+        <div class="box">Box 2</div>
+        <div class="item">Item 1</div>
+      </div>
+      <p class="item">Paragraph Item</p>
+    <!--Q-5=Write a CSS rule to style the first div.content that is a direct child of .wrapper and is immediately followed by another div.content.-->
+    <div class="wrapper">
+        <div class="header">Header</div>
+        <div class="content">Content 1</div>
+        <div class="content">Content 2</div>
+        <div class="footer">Footer</div>
+      </div>
+      <p class="note">Note outside the wrapper</p>
+      <div class="extra">Extra Content</div>
+ 
+</body>
+</html>
+
